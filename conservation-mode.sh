@@ -18,8 +18,8 @@ fi
 currentMode=$(cat $FILE_LOCATION)
 
 # OUTPUT
-if [ "$MODE" -eq "1" ]; then
+if [ "$currentMode" -eq "1" ]; then
 	echo "Conservation mode is turned ON!"
-elif [ "$MODE" -eq "0" ]; then
+elif [ "$currentMode" -eq "0" ]; then
 	echo "Conservation mode is turned OFF!"
 fi
